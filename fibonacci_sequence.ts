@@ -7,10 +7,10 @@ function fn(n: number) {
 	let seq: number[] = [0, 1];
 	let i: number;
 
-	for ( i = 2; i < n; i++) {
+	for ( i = 2; i <= n; i++) {
 		let e: number = seq[i-1] + seq[i-2];
 		seq.push(e);
 	}
 
-	return seq;
+	return seq[n];
 }
